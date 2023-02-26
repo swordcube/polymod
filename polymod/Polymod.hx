@@ -712,6 +712,7 @@ class Polymod
 		}
 	}
 
+	#if hscript
 	/**
 	 * When a scripted class defines an import, you can define another class which should be imported instead.
 	 * @param importAlias The full import path to use as an alias, as a string.
@@ -743,6 +744,7 @@ class Polymod
 	public static function blacklistImport(importPath:String):Void {
 		addImportAlias(importPath, null);
 	}
+	#end
 }
 
 /**
