@@ -137,7 +137,6 @@ class PolymodAssetLibrary
 		{
 			backend.destroy();
 		}
-		Polymod.clearScripts();
 	}
 
 	public function mergeAndAppendText(id:String, modText:String):String
