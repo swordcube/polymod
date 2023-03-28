@@ -106,7 +106,8 @@ class SysZipFileSystem extends SysFileSystem
 
 	public override function exists(path:String)
 	{
-		trace('Checking existance of file ${path}...');
+		// grr fuck you trace you make everything slower!!!
+		// trace('Checking existance of file ${path}...');
 		if (filesLocations.exists(path))
 			return true;
 		if (fileDirectories.contains(path))
